@@ -1,0 +1,9 @@
+Points for plotting:
+Point P: (2, 1)
+Point A: (4, 2)
+Point B: (8, 4)
+
+X,Y
+2,1
+4,2
+8,4
