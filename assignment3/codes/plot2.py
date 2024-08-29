@@ -38,9 +38,9 @@ for i in range(len(points)):
                 [points[i][2], points[j][2]], 'b--')  # 'b--' for blue dashed lines
 
 # Set labels
-ax.set_xlabel('X')
-ax.set_ylabel('Y')
-ax.set_zlabel('Z')
+ax.set_xlabel($X$)
+ax.set_ylabel($Y$)
+ax.set_zlabel($Z$)
 
 # Set title
 ax.set_title('3D Plot of Points and Lines')
