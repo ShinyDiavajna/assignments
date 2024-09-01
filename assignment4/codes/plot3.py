@@ -42,9 +42,9 @@ def plot_points(points):
         for label, (x, y, z) in zip(labels, points):
             ax.text(x, y, z, f'{label} ({x:.1f}, {y:.1f}, {z:.1f})', fontsize=12, ha='right')
 
-        ax.set_xlabel('X axis')
-        ax.set_ylabel('Y axis')
-        ax.set_zlabel('Z axis')
+        ax.set_xlabel('$X$')
+        ax.set_ylabel('$Y$')
+        ax.set_zlabel('$Z$')
 
         # Remove plot title
         plt.show()
