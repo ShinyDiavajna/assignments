@@ -44,9 +44,9 @@ def plot_points(points):
                 ax.plot([x1, x2], [y1, y2], [z1, z2], 'k--', lw=1)
 
     # Set labels and title
-    ax.set_xlabel('X axis')
-    ax.set_ylabel('Y axis')
-    ax.set_zlabel('Z axis')
+    ax.set_xlabel('$X axis$')
+    ax.set_ylabel('$Y axis$')
+    ax.set_zlabel('$Z axis$')
 
     ax.legend()
 
