@@ -38,7 +38,7 @@ def plot_points(points):
     point_names = list(points.keys())
     for i in range(len(point_names)):
         for j in range(i + 1, len(point_names)):
-            if not (point_names[i] == 'Q2' and point_names[j] == 'P') and not (point_names[i] == 'P' and point_names[j] == 'Q2'):
+            if not (point_names[i] == 'Q2' and point_names[j] == 'Q1') and not (point_names[i] == 'Q1' and point_names[j] == 'Q2'):
                 x1, y1, z1 = points[point_names[i]]
                 x2, y2, z2 = points[point_names[j]]
                 ax.plot([x1, x2], [y1, y2], [z1, z2], 'k--', lw=1)
