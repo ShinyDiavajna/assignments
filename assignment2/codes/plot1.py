@@ -55,7 +55,7 @@ def plot_points(x_coords, y_coords, labels):
     plt.show()
 
 def main():
-    filename = 'points.txt'
+    filename = 'plo1.txt'
     x_coords, y_coords, labels = read_points_from_file(filename)
     
     if not x_coords or not y_coords:

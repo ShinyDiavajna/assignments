@@ -2,7 +2,7 @@
 
 int main() {
     // Define the filename
-    const char *filename = "points.txt";
+    const char *filename = "plot1.txt";
 
     // Open the file for writing (create it if it doesn't exist)
     FILE *file = fopen(filename, "w");
