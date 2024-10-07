@@ -1,0 +1,3 @@
+Center of Circle: (0.00, 0.00)
+Radius of Circle: 2.00
+Note: The value of 'a' is considered as 1.
