@@ -54,8 +54,8 @@ def plot_circle_and_triangle(center, radius):
 
     # Add grid and labels
     plt.grid()
-    plt.xlabel('X-axis')
-    plt.ylabel('Y-axis')
+    plt.xlabel('$X-axis$')
+    plt.ylabel('$Y-axis$')
     
     # Show the plot
     plt.show()
