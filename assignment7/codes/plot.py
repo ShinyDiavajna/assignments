@@ -1,71 +1,40 @@
-import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.pyplot as plt
 
-def read_circle_parameters(file_path):
-    with open(file_path, 'r') as file:
-        lines = file.readlines()
-        # Extract center coordinates
-        center_line = lines[0].strip().split(': ')[1].strip('()').split(', ')
-        center = (float(center_line[0]), float(center_line[1]))
-        
-        # Extract radius
-        radius_line = lines[1].strip().split(': ')[1]
-        radius = float(radius_line)
-    
-    return center, radius
+# Load data
+points = np.loadtxt("points.dat", delimiter=',')
+x_triangle = points[:60, 0]
+y_triangle = points[:60, 1]
+x_circle = points[60:, 0]
+y_circle = points[60:, 1]
 
-def plot_circle_and_triangle(center, radius):
-    fig, ax = plt.subplots()
-    
-    # Create a circle (circumcircle)
-    circle = plt.Circle(center, radius, color='blue', fill=False, linewidth=2)
-    ax.add_artist(circle)
-    
-    # Calculate side length of the triangle based on the circumradius
-    a = radius * np.sqrt(3)  # Side length of the equilateral triangle
+# Create the plot
+plt.figure()
+plt.plot(x_triangle, y_triangle, label='Triangle Edges')
+plt.fill(x_triangle, y_triangle, 'lightblue', alpha=0.5)
+plt.plot(x_circle, y_circle, label='Circle', color='orange')
 
-    # Vertices of the equilateral triangle
-    vertices = np.array([
-        [center[0] - a / 2, center[1] - radius / 2],
-        [center[0] + a / 2, center[1] - radius / 2],
-        [center[0], center[1] + radius]
-    ])
+# Define circle center
+circle_center = (0, 0)
 
-    # Draw the triangle
-    triangle = plt.Polygon(vertices, color='orange', fill=None, linewidth=2)
-    ax.add_artist(triangle)
+# Indicate the center with a point and annotate it
+plt.plot(circle_center[0], circle_center[1], 'ro')  # Red point for the center
+plt.annotate('O', xy=circle_center, xytext=(5, 5), textcoords='offset points', fontsize=12, color='red')
 
-    # Draw a dot at the center and label it O
-    ax.plot(center[0], center[1], 'ro')  # Red dot at center
-    ax.annotate('O', xy=center, xytext=(center[0] + 0.1, center[1] + 0.1),
-                fontsize=12, ha='center', color='black', weight='bold')
-    
-    # Set limits and aspect
-    ax.set_xlim(center[0] - radius - 1, center[0] + radius + 1)
-    ax.set_ylim(center[1] - radius - 1, center[1] + radius + 1)
-    ax.set_aspect('equal', 'box')
-    
-    # Annotate radius with a line from center to a vertex
-    radius_vertex = vertices[2]  # Using the top vertex of the triangle
-    ax.plot([center[0], radius_vertex[0]], [center[1], radius_vertex[1]], 'k--')  # Dashed line
-    ax.annotate('2a', xy=radius_vertex,
-                xytext=(radius_vertex[0] + 0.1, radius_vertex[1] + 0.1),
-                fontsize=12, ha='left', color='black', weight='bold')
+# Identify the topmost vertex of the triangle (assuming it's the first vertex in your data)
+top_vertex = (x_triangle[0], y_triangle[0])
 
-    # Add grid and labels
-    plt.grid()
-    plt.xlabel('$X-axis$')
-    plt.ylabel('$Y-axis$')
-    
-    # Show the plot
-    plt.show()
+# Draw a line from the center to the top vertex
+plt.plot([circle_center[0], top_vertex[0]], [circle_center[1], top_vertex[1]], 'k--')  # Dashed line
+plt.annotate('2a', xy=((circle_center[0] + top_vertex[0]) / 2, (circle_center[1] + top_vertex[1]) / 2), 
+                         fontsize=10, color='black')
 
-# File path
-file_path = 'plot.txt'
-
-# Read the circle parameters
-center, radius = read_circle_parameters(file_path)
-
-# Plot the circle and triangle
-plot_circle_and_triangle(center, radius)
+# Plot settings
+plt.xlabel("$x$")
+plt.ylabel("$y$")
+plt.title("Equilateral Triangle and Circle")
+plt.grid(True)
+plt.legend(loc="upper right")
+plt.axis('equal')
+plt.show()
 
