@@ -1,10 +1,12 @@
+\begin{tikzpicture} 
+
 \begin{tikzpicture}
     % Axes
     \draw[->] (-1,0) -- (12,0) node[right] {$x$};
     \draw[->] (0,-1) -- (0,5) node[above] {$y$};
 
     % Curve
-    \draw[domain=0:12, samples=100] plot (\x, {sqrt(\x)}) ; 
+    \draw[domain=4:12, samples=100] plot (\x, {sqrt(\x)}) ; 
 
     % Lines
     \draw[dashed] (0,2) -- (4,2);
@@ -17,8 +19,13 @@
     \node[below] at (9,0) {$x$};
     \node[left] at (0,2) {$2$};
     \node[left] at (0,3) {$y$};
-    \node[ below right] at (4.5, {sqrt(4.5)}) {$y = y(x)$};
+    \node at (6.5,1) {$A1$};
+    \node at (2.5,2.5) {$A2$};
+    \node[ above right] at (4.5, {sqrt(5}) {$y = y(x)$};
     
+\end{tikzpicture}
+
+
 \end{tikzpicture}
 
 
