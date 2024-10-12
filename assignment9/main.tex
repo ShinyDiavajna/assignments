@@ -1,0 +1,144 @@
+ %iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,onecolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}     
+\usepackage{xparse}
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}
+\usepackage{multicol}
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+% Marks the beginning of the document
+\begin{document}
+\title{9-04-2024 Shift1 Q16-30}
+\author{EE24Btech11058 - P.Shiny Diavajna}
+\maketitle
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\subsection{Multiple Choice}
+\begin{enumerate}
+    \item Let $\int \frac{2 - \tan x}{3+ \tan x} \,dx = \frac{1}{2}\brak{\alpha x + \log_e |\beta \sin x + \gamma \cos x |} + C,$ where $C$ is the constant of integration. Then $\alpha + \frac{\gamma}{\beta}$ is equal to :
+    \begin{enumerate}
+        \item $1$
+        \item $7$
+        \item $4$
+        \item $3$\\
+    \end{enumerate}
+
+
+    \item A ray of light coming from the point $\vec{P}\brak{1,2}$ gets reflected from $\vec{Q}$ on the $x-axis$ and then passes through the point $\vec{R}\brak{4,3}.$ If the point $\vec{S}\brak{h,k}$ is such that $PQRS$ is a parallelogram, then $hk^2$ is equal to :
+    \begin{enumerate}
+        \item $80$
+        \item $70$
+        \item $60$
+        \item $90$\\
+    \end{enumerate}
+
+    \item $\overrightarrow{OA} = 2 \overrightarrow{a},\overrightarrow{OB} = 6\overrightarrow{a}+ 5\overrightarrow{b}$ and $\overrightarrow{OC} = 3\overrightarrow{b},$ where $O$ is the origin. If the area of the parallelogram with adjacent sides $\overrightarrow{OA}$ and $\overrightarrow{OC}$ is $15sq.units,$ then the area $\brak{in sq.units}$ of the quadrilateral $OABC$ is equal to :
+    \begin{enumerate}
+        \item $38$
+        \item $32$
+        \item $40$
+        \item $35$\\
+    \end{enumerate}
+
+    \item Let $f\brak{x}=x^2+9, g\brak{x}= \frac{x}{x-9}$ and $a=(f \circ g)(10), b= (g \circ f)(3).$ If $e$ and $l$ denote the eccentricity and the length of the latus rectum of the ellipse $\frac{x^2}{a} + \frac{y^2}{b} = 1,$ then $8e^2 + l^2$ is equal to :
+    \begin{enumerate}
+        \item $16$
+        \item $12$
+        \item $8$
+        \item $6$ \\
+    \end{enumerate}
+
+
+    \item The parabola $y^2=4x$ divides the area of the circle $x^2+y^2=5$ in two parts. The area of the smaller part is equal to :
+    \begin{enumerate}
+        \item $\frac{1}{3} + \sqrt{5} \sin^{-1} \brak{\frac{2}{\sqrt{5}}}$
+        \item $\frac{2}{3} + \sqrt{5} \sin^{-1} \brak{\frac{2}{\sqrt{5}}}$
+        \item $\frac{1}{3} + 5 \sin^{-1} \brak{\frac{2}{\sqrt{5}}}$
+        \item $\frac{2}{3} + 5 \sin^{-1} \brak{\frac{2}{\sqrt{5}}}$\\
+    \end{enumerate}
+    
+    
+
+\end{enumerate}
+
+\subsection{Numericals}
+\begin{enumerate}
+   \item Let A be a non-singular matrix of order $3$. If $det\brak{3adj\brak{2adj\brak{\brak{det A}A}}} = 3^{-13} . 2^{-10}$ and $det\brak{3adj\brak{2A}}= 2^m.3^n$ , then $|3m + 2n|$ is equal to $ \rule{2cm}{0.15mm}.$ \\
+
+   \item  The sum of the square of the modulus of the elements in the set $ \{ z=a+ib : a,b \in \textbf{Z},z \in \textbf{C},|z-1| \le 1,\\ |z-5| \le |z-5i| \}$  is $ \rule{2cm}{0.15mm}.$ \\
+
+   \item Let the centre of a circle, passing through the points $\brak{0,0}, \brak{1,0}$ and touching the circle $x^{2} + y^{2} = 9,$ be $\brak{h,k}$. Then for all possible values of the coordinates of the centre $\brak{h,k} , 4\brak{h^{2} + k^{2}} $ is equal to $\rule{2cm}{0.15mm}$.\\
+
+   \item Let $f:\brak{0,\pi} \rightarrow\textbf{R}$ be a function given by 
+   \begin{align*}
+   f(x) =
+    \begin{cases} 
+     \brak{\frac{8}{7}} ^ \frac{\tan 8x}{\tan 7x} & 0 <x<\frac{\pi}{2} \\
+      a-8 & x = \frac{\pi}{2}\\
+      \brak{1+|\cot x|} ^ {\frac{b}{a} |tanx|} & \frac{\pi}{2} < x <\pi
+        \end{cases}
+  \end{align*}
+  where $a,b \in \textbf{Z}.$ If $f$ is continuous at $x = \frac{\pi}{2},$ then $a^2 + b^2$ is equal to $\rule{2cm}{0.15mm}$.\\
+
+  \item The remainder when $428 ^{2024}$ is divided by $21$ is $\rule{2cm}{0.15mm}$.\\
+
+  \item Let $\lim_{n\rightarrow\infty}\brak{\frac{n}{\sqrt{n^{4}+1}}-\frac{2n}{(n^{2}+1)\sqrt{n^{4}+1}}+\frac{n}{\sqrt{n^{4}+16}}-\frac{8n}{(n^{2}+4)\sqrt{n^{4}+16}} +\cdots+\frac{n}{\sqrt{n^{4}+n^{4}}}-\frac{2n\cdot n^{2}}{(n^{2}+n^{2})\sqrt{n^{4}+n^{4}}}}$ be $\frac{\pi}{k},$ using only the principal values of the inverse trigonometric functions.Then $k^2$ is equal to $\rule{2cm}{0.15mm}$.\\
+  
+  \item If a function $f$ satisfies $f\brak{m+n} = f\brak{m} + f\brak{n}$ for all $m,n \in \textbf{N}$ and $f\brak{1} = 1,$ then the largest natural number $\lambda$ such that $\sum_{k=1}^{2022} f\brak{\lambda + k} \le \brak{2022} ^ 2$ is equal to $\rule{2cm}{0.15mm}$.\\
+
+  \item Let the set of all positive values of $\lambda,$ for which the point of local minimum of the function $\brak{1+x\brak{{\lambda} ^2 - x^2}}$ satisfies $\frac{x^2 + x+2}{x^2+5x+6} < 0,$ be $\brak{\alpha, \beta}.$ Then ${\alpha}^2 + {\beta}^2$ is equal to $\rule{2cm}{0.15mm}$.\\ 
+
+  \item Let $A = \{2, 3, 6, 7\}$ and $B = \{4,5,6,8\}.$ Let $R$ be a relation defined on $A \times B$ by $\brak{a_1,b_1} R \brak{a_2,b_2}$ if and only if $a_1+a_2 = b_1 + b_2.$ Then the number of elements in $R$ is $\rule{2cm}{0.15mm}$.\\ 
+
+  \item Let $a,b$ and $c$ denote the outcome of three independent rolls of a fair tetrahedral die, whose four faces are marked $1,2,3,4.$ If the probability that $ax^2 + bx +c=0$ has all real roots is $\frac{m}{n}, gcd\brak{m,n}=1,$ then $m+n$ is equal to $\rule{2cm}{0.15mm}$.\\ 
+
+  
+
+
+ 
+
+
+ 
+ 
+ 
+\end{enumerate}
+\end{document}
