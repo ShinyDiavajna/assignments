@@ -1,0 +1,200 @@
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal]{IEEEtran}
+\usepackage[a5paper, margin=10mm, onecolumn]{geometry}
+%\usepackage{lmodern} % Ensure lmodern is loaded for pdflatex
+\usepackage{tfrupee} % Include tfrupee package
+
+\setlength{\headheight}{1cm} % Set the height of the header box
+\setlength{\headsep}{0mm}     % Set the distance between the header box and the top of the text
+
+\usepackage{gvv-book}
+\usepackage{gvv}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+% \usepackage{gvv}                                        
+\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\begin{document}
+
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+
+\title{2007 GATE AE}
+\author{EE24btech11058-P.Shiny Diavajna}
+% \maketitle
+% \newpage
+% \bigskip
+{\let\newpage\relax\maketitle}
+
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\setlength{\intextsep}{10pt} % Space between text and floats
+
+
+\numberwithin{equation}{enumi}
+\numberwithin{figure}{enumi}
+\renewcommand{\thetable}{\theenumi}
+ \begin{enumerate}
+     \item Which one of the following engines should be used by a subsonic passenger transport airplane for minimum specific fuel consumption ?
+     \begin{enumerate}
+         \item Turbojet engine with afterburner
+         \item Turbofan engine
+         \item Ramjet engine
+         \item Seramjet engine\\
+     \end{enumerate}
+
+     \item A spring-mass-damper system with a mass of $1$ kg is found to have a damping ratio of $0.2$ and a natural frequency of $5 rad/s$.The damping of the system is given by
+     \begin{enumerate}
+         \item $2 Ns/m$
+         \item $2 N/s$
+         \item $0.2 kg/s$
+         \item $0.2 N/s$ \\    
+     \end{enumerate}
+
+    \item if $f\brak{\theta} = \myvec{ \cos\theta & \sin\theta \\ -\sin\theta & \cos\theta}$, then $f\brak{\alpha} f\brak{\beta} =$
+    \begin{enumerate}
+        \item $f\brak{\frac{\alpha}{\beta}}$
+        \item $f\brak{\alpha +\beta}$
+        \item $f\brak{\alpha - \beta}$
+        \item $2 \times 2 $ zero matrix \\     
+    \end{enumerate}
+
+    \item An artificial satellite remains in orbit and does not fall to the earth because 
+    \begin{enumerate}
+        \item the centrifugal force acting on it balances the gravitational attraction
+        \item the on-board rocket motors provide continuous boost to keep it in orbit
+        \item its transverse velocity keeps it from hitting the earth although if falls continuously
+        \item due to its high speed it derives sufficient lift from the rarefied atmosphere \\
+    \end{enumerate}
+     
+    \item The Euler iteration formula for numerically integrating a first order nonlinear differential equation of the form $\dot{x}$, with a constant step size of $\Delta t$ is 
+    \begin{enumerate}
+    \item $x_{k+1} = x_{k} - \Delta t \times f\brak{x_{k}}$ 
+    \item $x_{k+1} = x_{k} + \brak{{\Delta t}^2/2} \times f\brak{x_{k}}$ 
+    \item $x_{k+1} = x_{k} - \brak{1/{\Delta t}} \times f\brak{x_{k}}$ 
+    \item $x_{k+1} = x_{k} + \Delta t \times f\brak{x_{k}}$ \\
+    \end{enumerate}
+
+    \item The number of natural frequencies of an elastic beam with cantilever boundary conditions is 
+    \begin{enumerate}
+        \item $1$
+        \item $3$
+        \item $1000$
+        \item Infinite\\
+    \end{enumerate}
+
+    \item For maximum range of a glider,which of the following conditions is true ?
+    \begin{enumerate}
+        \item lift to drag ratio is maximum
+        \item rate of descent is minimum
+        \item descent angle is maximum
+        \item lift to weight is maximum \\
+    \end{enumerate}
+
+    \item An airplane with a larger wing as compared to a smaller wing will necessarily have 
+    \begin{enumerate}
+        \item more longitudinal static stability
+        \item less longitudinal static stability
+        \item same longitudinal static stability
+        \item more longitudinal static stability for an aft tail airplane if aerodynamic center of the larger wing is behind the center of gravity of the airplane \\
+    \end{enumerate}
+
+    \item The minimum value of 
+    \begin{align*}
+       J\brak{x} = x^2 -7x +30
+    \end{align*}occurs at 
+    \begin{enumerate}
+        \item $x = 7/2$
+        \item $x = 7/30$
+        \item $x = 30/7$
+        \item $x = 30$ \\
+    \end{enumerate}
+
+    \item Two airplanes are identical except for the location of the wing. The longitudinal static stability of the airplane with low wing configuration will be 
+    \begin{enumerate}
+        \item more than the airplane with high wing configuration
+        \item less than the airplane with high wing configuration
+        \item same as the airplane with high wing configuration
+        \item more if elevator is deflected \\
+    \end{enumerate}
+
+    \item For a fixed center of gravity location of an airplane, when the propeller is mounted on the nose of the fuselage
+    \begin{enumerate}
+        \item Longitudinal static stability increases
+        \item Longitudinal static stability decreases
+        \item Longitudinal static stability remains same
+        \item Longitudinal static stability is maximum \\
+    \end{enumerate}
+
+    \item Let an airplane in a steady level flight be trimmed at a certain speed. A level and steady flight at a higher speed could be achieved by changing 
+    \begin{enumerate}
+        \item engine throttle only
+        \item elevator only
+        \item throttle and elevator together 
+        \item rudder only \\
+    \end{enumerate}
+
+    \item For a plane strain in the $x-y$ plane, in the general, the non-zero stress terms are 
+    \begin{enumerate}
+        \item $\sigma_{zz} , \sigma_{xz}, \sigma_{yz}, \sigma_{xy}$
+        \item $\sigma_{zz} , \sigma_{xz}, \sigma_{yz}, \sigma_{xy}$
+        \item $\sigma_{xx} , \sigma_{xy}, \sigma_{yy}, \sigma_{xz}$
+        \item $\sigma_{zz} , \sigma_{yy}, \sigma_{xy}, \sigma_{zz}$
+    \end{enumerate}
+
+    \item For an elastic anisotropic solid, the number of independent elastic constants in its constitutive equations is 
+    \begin{enumerate}
+        \item $2$
+        \item $9$
+        \item $21$
+        \item $36$
+    \end{enumerate}
+
+    \item Total pressure at a point is defined as the pressure when the flow is brought to rest 
+    \begin{enumerate}
+        \item adiabatically
+        \item isentropically
+        \item isothermally
+        \item isobarically \\
+    \end{enumerate}
+
+    \item The drag divergence Mach number of an airfoil
+    \begin{enumerate}
+        \item is a fixed number for a given airfoil
+        \item is always higher than the critical Mach number 
+        \item is equal to the critical Mach number at zero angle of attack
+        \item is the Mach number at which a shock wave first appears on the airfoil\\
+    \end{enumerate}
+
+    \item On which one of the following thermodynamic cycles does an ideal ramjet operate
+    \begin{enumerate}
+        \item The Rankine cycle 
+        \item The Brayton cycle
+        \item Carnot cycle
+        \item The Otto cycle\\
+    \end{enumerate}
+ 
+\end{enumerate}
+\end{document}
